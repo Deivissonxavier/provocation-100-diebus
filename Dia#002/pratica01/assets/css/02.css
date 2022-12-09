@@ -1,0 +1,142 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+@keyframes line-close-1{
+    0%{
+      transform:translatey(-20px);
+    }
+    50%{
+      transform:translatey(0px);
+    }
+    100%{
+      transform:rotate(45deg);
+    }
+  
+  }
+@keyframes line-close-2{
+  0%{
+      transform:translatey(0px);
+    }
+  50%{
+      transform:translatey(0px);
+    }
+  100%{
+    transform:rotate(-45deg);
+  }
+  
+  }
+@keyframes line-close-3{
+    0%{
+      transform:translatey(20px)
+      ;
+    }
+    50%{
+      transform:translatey(0px) ;
+    }
+    100%{
+      transform:rotate(-45deg)
+    }
+  
+  }
+@keyframes line-1{
+    0%{
+      transform:rotate(45deg);
+    }
+    50%{
+      transform:translatey(0px) rotate(0deg);
+    }
+    100%{
+      transform:translatey(-20px);
+    }
+  
+  }
+@keyframes line-2{
+  0%{
+      transform:rotate(-45deg);
+    }
+  50%{
+      transform:translatey(0px)rotate(0);
+    }
+  100%{
+    transform:translatey(0px);
+  }
+  
+  }
+@keyframes line-3{
+    0%{
+      transform:rotate(-45px);
+    }
+    50%{
+      transform:translatey(0px) rotate(0deg);
+    }
+    100%{
+      transform:translatey(20px);
+    }
+  
+  }
+
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+  overflow: hidden;
+  background: #2ECC71;
+  color: #333;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.container{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content:center;
+  cursor:pointer;
+  width:80px;
+  height:60px;
+}
+.linha{
+  position:absolute;
+  background:white;
+  width:80px;
+  height:10px;
+  border-radius:5px;
+  box-shadow:0px 0px 5px #555;
+}
+.linha:nth-child(1){
+  animation:line-1 1s forwards;
+  
+  
+}
+.linha:nth-child(2){
+  animation:line-2 1s forwards;
+  
+}
+.linha:nth-child(3){
+animation:line-3 1s forwards;
+  
+}
+.container.close .linha:nth-child(1){
+  
+  animation:line-close-1 1s forwards;
+}
+  .container.close .linha:nth-child(2){
+    
+  animation:line-close-2 1s forwards;
+}
+.container.close .linha:nth-child(3){
+  
+  animation:line-close-3 1s forwards;
+}
