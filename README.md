@@ -21,3 +21,6 @@ Challenge
 
 ![005](Dia%23005/assets/img/005.png)
 
+## 006
+
+
