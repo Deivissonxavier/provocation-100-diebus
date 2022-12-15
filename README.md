@@ -23,4 +23,5 @@ Challenge
 
 ## 006
 
+![006](Dia%23006/assets/img/006.png)
 
