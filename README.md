@@ -37,4 +37,7 @@ Challenge
 
 ![009](Dia%23009/assets/img/009.png)
 
+# 010
+
+![010](Dia%23010/assets/img/010.png)
 
