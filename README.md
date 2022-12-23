@@ -60,3 +60,7 @@ Challenge
 # 015
 
 ![015](Dia%23015/assets/img/015.png)
+
+# 016
+
+![016](Dia%23016/assets/img/016.png)
