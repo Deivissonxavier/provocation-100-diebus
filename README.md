@@ -64,3 +64,7 @@ Challenge
 # 016
 
 ![016](Dia%23016/assets/img/016.png)
+
+# 017
+
+![017](Dia%23017/assets/img/017.png)
