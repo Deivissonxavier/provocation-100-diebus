@@ -72,3 +72,7 @@ Challenge
 # 018
 
 ![018](Dia%23018/assets/img/018.png)
+
+# 019
+
+![019](Dia%23019/assets/img/019.png)
