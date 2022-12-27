@@ -76,3 +76,7 @@ Challenge
 # 019
 
 ![019](Dia%23019/assets/img/019.png)
+
+# 020
+
+![020](Dia%23020/assets/img/020.png)
