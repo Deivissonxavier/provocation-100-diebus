@@ -80,3 +80,7 @@ Challenge
 # 020
 
 ![020](Dia%23020/assets/img/020.png)
+
+# 021
+
+![021](Dia%23021/assets/img/021.png)
