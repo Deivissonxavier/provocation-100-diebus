@@ -84,3 +84,7 @@ Challenge
 # 021
 
 ![021](Dia%23021/assets/img/021.png)
+
+# 022
+
+![022](Dia%23022/assets/img/022.png)
