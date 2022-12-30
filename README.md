@@ -88,3 +88,7 @@ Challenge
 # 022
 
 ![022](Dia%23022/assets/img/022.png)
+
+# 023
+
+![023](Dia%23023/assets/img/023.png)
