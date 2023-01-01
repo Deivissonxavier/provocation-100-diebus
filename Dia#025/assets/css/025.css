@@ -1,0 +1,120 @@
+.frame{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    overflow: hidden;
+    background-color: #2d9dd1;
+    font-family: Montserrat;
+}
+.map{
+    fill: #2d79d1;
+}
+.name{
+    font-weight: bold;
+    line-height: 0;
+    color: #000;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: #26b9cc;
+    padding: 10px 40px;
+}
+a:hover{
+    background-color: #26b9cc;
+    color: #fff;
+}
+.divide{
+    bottom: 5px;
+    width: 1px;
+    height: 28px;
+    background-color: #26b9cc;
+    position: absolute;
+}
+.marker{
+    fill: #ffd900;
+    position: absolute;
+    top: 150px;
+    left: 176px;
+    animation: move 4s infinite;
+    animation-fill-mode: both;
+    cursor: pointer;
+}
+.card{
+    position: absolute;
+    top: 0;
+    background-color: #fff;
+    top: 100px;
+    left: 80px;
+    cursor: pointer;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    line-height: 18px;
+    color: #353535;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+.marker:hover{
+    animation: market 2s;
+}
+.marker:hover ~ .card{
+    animation: card 2s;
+    animation-fill-mode: both;
+}
+.card:hover{
+    transform: rotateY(0deg);
+}
+.shadow{
+    position: absolute;
+    top: 228px;
+    left: 191px;
+    width: 18px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: #6e6e6e;
+    animation: shadow 4s infinite;
+}
+
+@keyframes market{
+    0%{
+        transform: rotateY(0);
+    }
+    100%{
+        transform: rotateY(180deg);
+    }
+}
+@keyframes card{
+    0%{
+        transform: rotateY(180deg);
+    }
+    100%{
+        transform: rotateY(0);
+    }
+}
+@keyframes move{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+@keyframes shadow{
+    0%{
+        transform: scaleX(0.7);
+    }
+    50%{
+        transform: scaleX(1);
+    }
+    100%{
+        transform: scaleX(0.7);
+    }
+}
