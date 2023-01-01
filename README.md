@@ -96,3 +96,7 @@ Challenge
 # 024
 
 ![024](Dia%23024/assets/img/024.gif)
+
+# 025
+
+![025](Dia%23025/assets/img/025.gif)
