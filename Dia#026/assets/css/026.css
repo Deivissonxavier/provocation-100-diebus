@@ -1,0 +1,127 @@
+.frame {
+	 position: absolute;
+	 top: 50%;
+	 left: 50%;
+	 width: 400px;
+	 height: 400px;
+	 margin-top: -200px;
+	 margin-left: -200px;
+	 overflow: hidden;
+	 background-color: #b8d7ff;
+	 font-family: system-ui;
+	 user-select: none;
+}
+ input {
+	 display: none;
+}
+ .box {
+	 position: absolute;
+	 width: 250px;
+	 height: 150px;
+	 top: 125px;
+	 left: 75px;
+	 background-color: #fff;
+	 overflow: hidden;
+	 opacity: 0;
+}
+ .title {
+	 display: block;
+	 padding: 20px 0;
+	 text-align: center;
+	 font-size: 20px;
+	 font-weight: bold;
+}
+ .text {
+	 display: block;
+	 text-align: center;
+	 font-size: 14px;
+	 padding: 0 15px;
+	 color: #aaa;
+}
+ .button {
+	 display: block;
+	 position: absolute;
+	 top: 246px;
+	 left: 75px;
+	 padding: 6px 0;
+	 width: 250px;
+	 text-align: center;
+	 background-color: #2e84be;
+	 color: #fff;
+	 z-index: 1;
+	 opacity: 0;
+     cursor: pointer;
+}
+ .button:hover {
+	 background-color: #2e6dbe;
+}
+ .number__box {
+	 position: absolute;
+	 top: -25px;
+	 right: -25px;
+	 width: 50px;
+	 height: 50px;
+	 background-color: #122072;
+	 rotate: 45deg;
+}
+ .number {
+	 position: absolute;
+	 top: 29px;
+	 left: 20px;
+	 rotate: -45deg;
+	 color: #fff;
+}
+ .box--1, .button--2 {
+	 opacity: 1;
+}
+ .button--2 {
+	 z-index: 10;
+}
+ #inp-1:checked ~ .button--2 {
+	 z-index: 10;
+}
+ #inp-1:checked ~ .box--3, #inp-1:checked ~ .button--1 {
+	 animation: one 5s;
+	 animation-fill-mode: both;
+	 opacity: 1;
+}
+ #inp-1:checked ~ .box--1, #inp-1:checked ~ .button--2 {
+	 opacity: 1;
+	 transition: opacity 5s;
+}
+ #inp-2:checked ~ .button--3 {
+	 z-index: 12;
+}
+ #inp-2:checked ~ .box--1, #inp-2:checked ~ .button--2 {
+	 animation: one 5s;
+	 animation-fill-mode: both;
+	 opacity: 1;
+}
+ #inp-2:checked ~ .box--2, #inp-2:checked ~ .button--3 {
+	 opacity: 1;
+	 transition: opacity 5s;
+}
+ #inp-3:checked ~ .button--1 {
+	 z-index: 14;
+}
+ #inp-3:checked ~ .box--2, #inp-3:checked ~ .button--3 {
+	 animation: one 5s;
+	 animation-fill-mode: both;
+	 opacity: 1;
+}
+ #inp-3:checked ~ .box--3, #inp-3:checked ~ .button--1 {
+	 opacity: 1;
+	 transition: opacity 5s;
+}
+ #inp-3:checked ~ .box--1, #inp-3:checked ~ .button--2 {
+	 opacity: 0;
+}
+ @keyframes one {
+	 0% {
+		 opacity: 1;
+	}
+	 100%, 10% {
+		 opacity: 0;
+	}
+}
+ 
