@@ -108,3 +108,7 @@ Challenge
 # 027
 
 ![027](Dia%23027/assets/img/027.gif)
+
+# 028
+
+![028](Dia%23028/assets/img/028.gif)
