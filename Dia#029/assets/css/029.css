@@ -1,0 +1,105 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600,400);
+
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-size-adjust: 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.frame{
+    width: 40rem;
+    height: 40rem;
+    border-radius: 0.2rem;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: #5ca4ea;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.search-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 4px 8px 12px 0 rgba(0, 0, 0, 0.1);
+}
+.search-container > div{
+    display: flex;
+}
+.search-container > div input, .search-container > div button{
+    border: none;
+    border-radius: 0;
+    outline: none;
+    height: 4rem;
+    background: #fff;
+}
+.search-container > div input{
+    width: 20.5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 0 0 0 1.5rem;
+    color: #4d8dcb;
+}
+
+.search-container > div input::-webkit-input-placeholder, .search-container > div input::-moz-placeholder, .search-container > div input::-moz-placeholder, .search-container > div input:-ms-input-placeholder, .search-container > div input:placeholder-shown{
+    color: #4d8dcb;
+    opacity: 1;
+}
+.search-container > div button{
+    width: 40px;
+    color: #5ca4ea;
+    font-size: 20px;
+    padding: 0;
+}
+#search-result-list{
+    background: #fff;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 2rem;
+    padding: 0 1.5rem;
+    margin: 0;
+    list-style: none;
+    color: #6e6e6e;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 4rem;
+    border-top: 1px solid #5ca4ea;
+    height: 0;
+}
+#search-result-list, #search-result-list li{
+    transition: 0.3s all ease-in-out;
+}
+#search-result-list li{
+    margin: 1.8rem 0;
+    padding: 0;
+    cursor: pointer;
+    opacity: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#search-result-list li:hover{
+    color: #4d8dcb;
+}
+#search-result-list li b{
+    font-weight: 600;
+}
+#search-result-list.active{
+    height: fit-content;
+}
+#search-result-list.active li{
+    opacity: 1;
+}
