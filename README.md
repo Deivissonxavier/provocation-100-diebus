@@ -120,3 +120,7 @@ Challenge
 # 030
 
 ![030](Dia%23030/assets/img/030.gif)
+
+# 031
+
+![031](Dia%23031/assets/img/031.gif)
