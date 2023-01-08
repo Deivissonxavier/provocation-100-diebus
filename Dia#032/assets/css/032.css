@@ -1,0 +1,66 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+ .frame {
+	 position: absolute;
+	 top: 50%;
+	 left: 50%;
+	 width: 400px;
+	 height: 400px;
+	 margin-top: -200px;
+	 margin-left: -200px;
+	 border-radius: 2px;
+	 box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+	 overflow: hidden;
+	 background: #264653;
+	 color: #333;
+	 font-family: 'Open Sans', Helvetica, sans-serif;
+	 -webkit-font-smoothing: antialiased;
+	 -moz-osx-font-smoothing: grayscale;
+}
+ .center {
+	 position: absolute;
+	 top: 50%;
+	 left: 50%;
+	 transform: translate(-50%, -50%);
+}
+ .counter {
+	 width: 130px;
+	 height: 40px;
+	 background: #fefae0;
+	 border-radius: 20px;
+	 display: flex;
+	 justify-content: space-between;
+	 align-items: center;
+	 box-shadow: 5px 6px 23px 0px rgba(0, 0, 0, 0.45);
+}
+ .plus, .minus {
+	 background: none;
+	 border: none;
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 transition: all 0.3s ease-in-out;
+}
+ .plus:hover, .minus:hover {
+	 cursor: pointer;
+	 transform: scale(1.1);
+}
+ .plus {
+	 fill: #2a9d8f;
+	 margin-right: 10px;
+}
+ .minus {
+	 fill: #e76f51;
+	 margin-left: 10px;
+}
+.value{
+	position: absolute;
+	font-weight: 600;
+	font-size: 20px;
+	color: #6a85a0;
+	transform-origin: 50% 50%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.icon{
+	width: 20px;
+}
