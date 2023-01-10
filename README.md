@@ -132,3 +132,7 @@ Challenge
 # 033
 
 ![033](Dia%23033/assets/img/033.gif)
+
+# 034
+
+![034](Dia%23034/assets/img/034.gif)
