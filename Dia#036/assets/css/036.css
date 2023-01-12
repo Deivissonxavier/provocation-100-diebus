@@ -1,0 +1,80 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.frame{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: #283642;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 240px;
+    width: 320px;
+    background: white;
+    transform: translate(-50%, -50%);
+}
+.tabs{
+    height: 40px;
+    background: #3D4D5E;
+}
+label{
+    height: 100%;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.material-symbols-outlined{
+    color: aqua;
+    transition: 0.5s;
+}
+label:hover > .material-symbols-outlined{
+    color: white;
+}
+label:last-child{
+    color: aqua;
+    margin-left: 120px;
+}
+.text{
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    color: #415868;
+    opacity: 0;
+    transition: 0.5s;
+    transform: translateY(10px);
+}
+input:checked + label + .text{
+    opacity: 1;
+    transform: translateY(0px);
+}
+input:checked + label{
+    background: teal;
+}
+input:checked + label > .material-symbols-outlined{
+    color: white;
+}
+.line{
+    position: absolute;
+    top: 40px;
+    height: 3px;
+    width: 280px;
+    background: #80808075;
+    box-shadow: 0 20px #80808075, 0 40px #80808075, 0 60px #80808075, 0 80px #80808075;
+}
