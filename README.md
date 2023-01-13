@@ -140,3 +140,7 @@ Challenge
 # 035
 
 ![035](Dia%23035/assets/img/035.gif)
+
+# 036
+
+![036](Dia%23036/assets/img/036.gif)
