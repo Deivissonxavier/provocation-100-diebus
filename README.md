@@ -156,3 +156,7 @@ Challenge
 # 039
 
 ![039](Dia%23039/assets/img/039.gif)
+
+# 040
+
+![040](Dia%23040/assets/img/040.gif)
