@@ -160,3 +160,7 @@ Challenge
 # 040
 
 ![040](Dia%23040/assets/img/040.gif)
+
+# 041
+
+![041](Dia%23041/assets/img/041.gif)
