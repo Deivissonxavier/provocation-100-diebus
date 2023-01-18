@@ -164,3 +164,7 @@ Challenge
 # 041
 
 ![041](Dia%23041/assets/img/041.gif)
+
+# 042
+
+![042](Dia%23042/assets/img/042.gif)
