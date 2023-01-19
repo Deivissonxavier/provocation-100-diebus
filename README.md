@@ -168,3 +168,7 @@ Challenge
 # 042
 
 ![042](Dia%23042/assets/img/042.gif)
+
+# 043
+
+![043](Dia%23043/assets/img/043.gif)
