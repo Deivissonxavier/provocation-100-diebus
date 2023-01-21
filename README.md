@@ -176,3 +176,7 @@ Challenge
 # 044
 
 ![044](Dia%23044/assets/img/044.gif)
+
+# 045
+
+![045](Dia%23045/assets/img/045.gif)
