@@ -180,3 +180,7 @@ Challenge
 # 045
 
 ![045](Dia%23045/assets/img/045.gif)
+
+# 046
+
+![046](Dia%23046/assets/img/046.gif)
