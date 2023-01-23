@@ -184,3 +184,7 @@ Challenge
 # 046
 
 ![046](Dia%23046/assets/img/046.gif)
+
+# 047
+
+![047](Dia%23047/assets/img/047.gif)
