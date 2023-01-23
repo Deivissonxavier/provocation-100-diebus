@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.frame{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: #fff;
+}
+.pixels{
+    display: flex;
+    flex-direction: column;
+}
+.pixel{
+    width: 20px;
+    height: 20px;
+    background: #de4738;
+    border: 1px solid #e24e3f;
+    float: left;
+}
+.hover{
+    background: #ec5142;
+    border-color: #e24e3f;
+}
+.check{
+    background: #fff;
+    border-color: #fff;
+}
