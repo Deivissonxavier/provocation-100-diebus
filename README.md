@@ -192,3 +192,7 @@ Challenge
 # 048
 
 ![048](Dia%23048/assets/img/048.gif)
+
+# 049
+
+![049](Dia%23049/assets/img/049.gif)
