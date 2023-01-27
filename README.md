@@ -200,3 +200,7 @@ Challenge
 # 050
 
 ![050](Dia%23050/assets/img/050.gif)
+
+# 051
+
+![051](Dia%23051/assets/img/051.gif)
