@@ -220,3 +220,7 @@ Challenge
 # 055
 
 ![055](Dia%23055/assets/img/055.gif)
+
+# 056
+
+![056](Dia%23056/assets/img/056.gif)
