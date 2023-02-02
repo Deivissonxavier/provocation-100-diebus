@@ -1,0 +1,206 @@
+*,
+*::after,
+*::before {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.frame {
+  position: relative;
+  height: 400px;
+  width: 400px;
+  border-radius: 5px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: #865f54;
+  -webkit-font-smoothing: antialised;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.flower {
+  position: relative;
+  height: 280px;
+  width: 160px;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform: rotateX(-40deg) rotateY(-40deg);
+  transition: all 3s ease-in-out;
+}
+.flower:hover {
+  transform: rotateX(-400deg) rotateY(-400deg);
+}
+.flower:hover .side {
+  opacity: 0.5;
+}
+
+.side {
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-style: solid;
+  border-width: 0 80px 138.56px 80px;
+  border-color: transparent transparent #eee transparent;
+  transform-origin: 50% 100%;
+  transition: all 3s ease-in-out;
+}
+
+.side-1 {
+  transform: translateZ(129.2px) rotateZ(90deg) rotateX(159.095deg);
+}
+
+.side-2 {
+  transform: translateZ(129.2px) rotateZ(-90deg) rotateX(159.095deg);
+}
+
+.side-3 {
+  transform: translateZ(-129.2px) rotateZ(90deg) rotateX(-159.095deg);
+}
+
+.side-4 {
+  transform: translateZ(-129.2px) rotateZ(-90deg) rotateX(-159.095deg);
+}
+
+.side-5 {
+  transform: rotateY(-90deg) translateZ(129.2px) rotateX(20.905deg);
+}
+
+.side-6 {
+  transform: rotateY(-90deg) translateZ(129.2px) rotateX(159.095deg);
+}
+
+.side-7 {
+  transform: rotateY(-90deg) translateZ(-129.2px) rotateX(-20.905deg);
+}
+
+.side-8 {
+  transform: rotateY(-90deg) translateZ(-129.2px) rotateX(-159.095deg);
+}
+
+.side-9 {
+  transform: translateY(129.2px) rotateX(69.095deg);
+}
+
+.side-10 {
+  transform: translateY(129.2px) rotateX(-69.095deg);
+}
+
+.side-11 {
+  transform: translateY(-129.2px) rotateX(110.905deg);
+}
+
+.side-12 {
+  transform: translateY(-129.2px) rotateX(-110.905deg);
+}
+
+.side-13 {
+  border-width: 138.56px 80px 0 80px;
+  transform: translateY(-129.2px) translateX(80px) rotateX(-135deg)
+    rotateY(-35.264deg) rotateZ(-8deg);
+}
+
+.side-14 {
+  border-width: 138.56px 80px 0 80px;
+  transform: translateY(-129.2px) translateX(80px) rotateX(135deg)
+    rotateY(35.264deg) rotateZ(-8deg);
+}
+
+.side-15 {
+  border-width: 138.56px 80px 0 80px;
+  transform: translateY(-129.2px) translateX(-80px) rotateX(-135deg)
+    rotateY(35.264deg) rotateZ(8deg);
+}
+
+.side-16 {
+  border-width: 138.56px 80px 0 80px;
+  transform: translateY(-129.2px) translateX(-80px) rotateX(135deg)
+    rotateY(-35.264deg) rotateZ(8deg);
+}
+
+.side-17 {
+  border-width: 138.56px 80px 0 80px;
+  transform: translateY(129.2px) translateX(80px) rotateX(45deg)
+    rotateY(-35.264deg) rotateZ(-8deg);
+}
+
+.side-18{
+    border-width: 138.56px 80px 0 80px;
+    transform: translateY(129.2px) translateX(80px) rotateX(-45deg) rotateY(35.264deg) rotateZ(-8deg);
+}
+
+.side-19{
+    border-width: 138.56px 80px 0 80px;
+    transform: translateY(129.2px) translateX(-80px) rotateX(45deg) rotateY(35.264deg) rotateZ(8deg);
+}
+
+.side-20{
+    border-width: 138.56px 80px 0 80px;
+    transform: translateY(129.2px) translateX(-80px) rotateX(-45deg) rotateY(-35.264deg) rotateZ(8deg);
+}
+
+.side-2 {
+    border-color: transparent transparent #436 transparent;
+}
+  
+.side-4 {
+    border-color: transparent transparent #436 transparent;
+}
+  
+.side-6 {
+    border-color: transparent transparent #436 transparent;
+}
+
+.side-8 {
+    border-color: transparent transparent #436 transparent;
+}
+
+.side-10 {
+    border-color: transparent transparent #436 transparent;
+}
+
+.side-12 {
+    border-color: transparent transparent #436 transparent;
+}
+
+.side-13 {
+    border-color: #496295 transparent transparent transparent;
+}
+
+.side-14 {
+    border-color: #496295 transparent transparent transparent;
+}
+
+.side-15 {
+    border-color: #496295 transparent transparent transparent;
+}
+
+.side-16 {
+    border-color: #496295 transparent transparent transparent;
+}
+
+.side-17 {
+    border-color: #496295 transparent transparent transparent;
+}
+  
+.side-18 {
+    border-color: #496295 transparent transparent transparent;
+}
+  
+.side-19 {
+    border-color: #496295 transparent transparent transparent;
+}
+  
+.side-20 {
+    border-color: #496295 transparent transparent transparent;
+}
