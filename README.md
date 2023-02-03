@@ -224,3 +224,11 @@ Challenge
 # 056
 
 ![056](Dia%23056/assets/img/056.gif)
+
+# 057
+
+![057](Dia%23057/assets/img/057.gif)
+
+# 058
+
+![058]()
