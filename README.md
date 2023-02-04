@@ -232,3 +232,7 @@ Challenge
 # 058
 
 ![058](Dia%23058/assets/img/058.gif)
+
+# 059
+
+![059](Dia%23059/assets/img/059.gif)
