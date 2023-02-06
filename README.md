@@ -240,3 +240,7 @@ Challenge
 # 060
 
 ![060](Dia%23060/assets/img/060.gif)
+
+# 061
+
+![061](Dia%23061/assets/img/061.gif)
