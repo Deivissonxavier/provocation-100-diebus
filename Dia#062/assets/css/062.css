@@ -1,0 +1,166 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+
+.img{
+    opacity: 20%;
+}
+
+.frame{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: #276282;
+    box-shadow: 6px 6px 13px #102734, -3px -3px 8px #0ff;
+    opacity: 90%;
+    font-family: Roboto, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.plan{
+    position: absolute;
+    width: 110px;
+    height: 160px;
+    top: 30px;
+    left: 25px;
+    background: #276282;
+    box-shadow: 2px 2px 5px #0ff, -3px -3px 10px #000;
+    opacity: 70%;
+    border-radius: 3px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out infinite;
+}
+
+.plan.basic {
+	 left: 10px;
+}
+ .plan.basic:hover ~ .datas .users .fill, .plan.basic:hover ~ .datas .gb .fill, .plan.basic:hover ~ .datas .projects .fill {
+	 transform: scaleX(0.05) translate3d(0, 0, 0);
+}
+
+.plan.pro{
+    left: 145px;
+}
+
+.plan.pro:hover ~ .datas .users .fill{
+    transform: scaleX(0.3) translate3d(0, 0, 0);
+}
+
+.plan.pro:hover ~ .datas .gb .fill{
+    transform: scaleX(0.7) translate3d(0, 0, 0);
+}
+
+.plan.pro:hover ~ .datas .projects .fill{
+    transform: scaleX(0.5) translate3d(0, 0, 0);
+}
+
+.plan.premium {
+    left: 279px;
+}
+.plan.premium:hover ~ .datas .users .fill, .plan.premium:hover ~ .datas .gb .fill, .plan.premium:hover ~ .datas .projects .fill {
+    transform: scaleX(1) translate3d(0, 0, 0);
+}
+
+.plan:hover{
+    transform: scale(1.1) rotate(3deg) translate3d(0, 0, 0);
+    box-shadow: 8px 8px 16px 1 rgba(0, 0, 0, 0.1);
+}
+
+.plan:hover .title{
+    background: black;
+}
+
+.plan:hover .price{
+    color: #0ff;
+    transform: scale(1.2) rotate(-5deg) translate3d(0, 0, 0);
+}
+
+.plan .title{
+    height: 36px;
+    text-align: center;
+    background: #000;
+    color: #0ff;
+    font-weight: 500;
+    line-height: 36px;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out infinite;
+}
+
+.plan .price{
+    text-align: center;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 600;
+    padding: 16px 0 17px 0;
+    transition: all 0.3s ease-in-out infinite;
+}
+
+.plan .price span{
+    display: block;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 400;
+}
+
+.plan .line{
+    height: 2px;
+    background: #0ff;
+    margin: 0 auto 5px auto;
+}
+
+.datas{
+    position: absolute;
+    height: 160px;
+    width: 380px;
+    top: 220px;
+    left: 10px;
+    background: #276282;
+    box-shadow: inset 5px 5px 10px #102734, inset -2px -2px 7px #0ff;
+    opacity: 80%;
+}
+
+.datas .data{
+    margin: 17px 15px 0 15px;
+}
+
+.datas .data .text{
+    font-size: 12px;
+    height: 20px;
+}
+
+.datas .data .text .left{
+    float: left;
+}
+
+.datas .data .text .right{
+    float: right;
+}
+
+.datas .data .line{
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    height: 4px;
+    background: #0ff;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.datas .data .line .fill{
+	 position: relative;
+	 z-index: 1;
+	 height: 10px;
+	 width: 100%;
+	 background: #000;
+	 transform: scaleX(0);
+	 transform-origin: 0 50%;
+	 transition: all 0.3s ease-in-out infinite;
+	 border-radius: 3px;
+}
