@@ -1,0 +1,44 @@
+.frame{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: #2c3e50;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.center:hover .textBox{
+    background: #8e44ad;
+    color: #808000;
+    transform: translate(10px, 10px);
+    box-shadow: -10px -10px 0px #ffff00;
+}
+
+.textBox{
+    padding: 1rem;
+    width: 100px;
+    background: #fff;
+    font-weight: light;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    text-align: center;
+    box-shadow: 10px 10px 0px #8e44ad;
+    border-radius: 25px;
+    transition: box-shadow 0.3s, color 0.3s, background 0.1s, transform 0.3s;
+
+}
