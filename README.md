@@ -264,3 +264,7 @@ Challenge
 # 066
 
 ![066](Dia%23066/assets/img/066.gif)
+
+# 067
+
+![067](Dia%23067/assets/img/067.gif)
