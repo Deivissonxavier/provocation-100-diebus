@@ -1,0 +1,107 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.frame{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: #363847;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eye{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: #D9D8D8;
+    border-radius: 100% 0;
+    transform: rotate(45deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.iris{
+    width: 130px;
+    height: 130px;
+    background: radial-gradient(circle, rgba(63, 171, 251, 1) 28%, rgba(55, 193, 222, 1) 54%, rgba(52, 175, 210, 1) 65%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    animation: eyeball 5s infinite;
+}
+
+.pupil{
+    width: 40px;
+    height: 40px;
+    background: #0d3552;
+    border-radius: 50%;
+}
+
+.eye-lid-top{
+    position: absolute;
+    top: 40px;
+    width: 300px;
+    height: 100px;
+    background: #363847;
+    z-index: 1;
+    animation: top 5s ease-in-out infinite;
+}
+
+.eye-lid-bottom{
+    position: absolute;
+    bottom: 40px;
+    width: 300px;
+    height: 100px;
+    z-index: 1;
+    background: #363847;
+    animation: bottom 5s ease-in-out infinite;
+}
+
+@keyframes top{
+    0%, 18%, 22%, 50%, 55%, 80%, 88%{
+        transform: translateY(0px);
+    }
+    20%, 53%, 84%{
+        transform: translateY(100px);
+    }
+}
+
+@keyframes bottom{
+    0%, 18%, 22%, 50%, 55%, 80%, 88%{
+        transform: translateY(0px);
+    }
+    20%, 53%, 84%{
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes eyeball{
+    0%, 10%, 53%, 60%, 73%{
+        transform: scale(1.1) translate(0);
+    }
+    15%, 30%{
+        transform: translate(-10px, 50px);
+    }
+    34%, 50%{
+        transform: translate(-30px, 0px);
+    }
+    64%, 70%{
+        transform: translate(50px, -20px);
+    }
+}
