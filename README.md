@@ -280,3 +280,7 @@ Challenge
 # 070
 
 ![070](Dia%23070/assets/img/070.gif)
+
+# 071
+
+![071](Dia%23071/assets/img/071.gif)
