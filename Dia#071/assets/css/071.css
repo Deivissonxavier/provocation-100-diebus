@@ -233,7 +233,7 @@ button{
 }
 
 .key:nth-child(36):focus ~ div{
-	animation: short 1s step-end, short 1s step-end 1s,  short 1s step-end 2s, short 1s step-end 3s, short 1s step-end 4s;
+    animation: short 1s step-end, short 1s step-end 1s,  short 1s step-end 2s, short 1s step-end 3s, short 1s step-end 4s;
 }
 
 .key:nth-child(37):focus ~ div{
