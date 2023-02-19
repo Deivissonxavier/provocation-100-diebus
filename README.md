@@ -292,3 +292,7 @@ Challenge
 # 073
 
 ![073](Dia%23073/assets/img/073.gif)
+
+# 074
+
+![074](Dia%23074/assets/img/074.gif)
