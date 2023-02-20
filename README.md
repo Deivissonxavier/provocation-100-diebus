@@ -296,3 +296,7 @@ Challenge
 # 074
 
 ![074](Dia%23074/assets/img/074.gif)
+
+# 075
+
+![075](Dia%23075/assets/img/075.gif)
