@@ -300,3 +300,7 @@ Challenge
 # 075
 
 ![075](Dia%23075/assets/img/075.gif)
+
+# 076
+
+![076](Dia%23076/assets/img/076.gif)
