@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+  
+body{
+    background-color: #333;
+}
+  
+:root{
+    --white: #efefefff;
+    --blue: #3454d1ff;
+    --turquoise: #34d1bfff;
+    --black: rgb(18, 15, 16);
+    --cerise: #d1345bff;
+}
+  
+.frame{
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    background: var(--black);
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+    -webkit-osx-font-smoothing: grayscale;
+}
+  
+.wheel{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 0;
+    border-radius: 50%;
+    animation: 8s ease 1s infinite wheelani;
+}
+  
+.icon{
+    position: absolute;
+    top: 30px;
+    width: 50px;
+    height: 50px;
+    left: 175px;
+    background-color: var(--black);
+    transition: color 50ms ease;
+    animation: 8s ease-in 1s infinite iconani;
+}
+  
+.wheel:nth-child(1) {--offset: 00deg;}
+.wheel:nth-child(2) {--offset: 30deg;}
+.wheel:nth-child(3) {--offset: 60deg;}
+.wheel:nth-child(4) {--offset: 90deg;}
+.wheel:nth-child(5) {--offset: 120deg;}
+.wheel:nth-child(6) {--offset: 150deg;}
+.wheel:nth-child(7) {--offset: 180deg;}
+.wheel:nth-child(8) {--offset: 210deg;}
+.wheel:nth-child(9) {--offset: 240deg;}
+.wheel:nth-child(10) {--offset: 270deg;}
+.wheel:nth-child(11) {--offset: 300deg;}
+.wheel:nth-child(12) {--offset: 330deg;}
+  
+@keyframes wheelani{
+    0% {transform: scale(0.1) rotate(calc(var(--offset) + 0deg)); }
+    8% {transform: scale(0.3) rotate(calc(var(--offset) + 45deg)); }
+    16% {transform: scale(0.6) rotate(calc(var(--offset) + 135deg));}
+    24% {transform: scale(1) rotate(calc(var(--offset) + 45deg));}
+    32% {transform: scale(1) rotate(calc(var(--offset) + 135deg));}
+    44% {transform: scale(1) rotate(calc(var(--offset) + 155deg));}
+    48% {transform: scale(1) rotate(calc(var(--offset) + 135deg));}
+    56% {transform: scale(1) rotate(calc(var(--offset) + 180deg));}
+    64% {transform: scale(1) rotate(calc(var(--offset) + 225deg));}
+    72% {transform: scale(.6) rotate(calc(var(--offset) + 270deg));}
+    76% {transform: scale(.6) rotate(calc(var(--offset) + 250deg));}
+    80% {transform: scale(.3) rotate(calc(var(--offset) + 270deg));}
+    88% {transform: scale(.3) rotate(calc(var(--offset) + 315deg));}
+    92% {transform: scale(.3) rotate(calc(var(--offset) + 370deg));}
+    96% {transform: scale(1.5) rotate(calc(var(--offset) + 315deg));}
+    100% {transform: scale(1) rotate(calc(var(--offset) + 315deg));}
+}
+  
+@keyframes iconani{
+    00%{border-radius: 0%; background-color: var(--blue); transform: scale(3,3) skew(0deg, 0deg); opacity: 1;}
+    08%{border-radius: 0%; background-color: var(--blue); transform: scale(1,1) skew(0deg, 0deg);}
+    16%{border-radius: 0%; background-color: var(--blue); transform: scale(1,1) skew(0deg, 0deg);}
+    24%{border-radius: 0%; background-color: var(--blue); transform: scale(.5,.5) skew(0deg, 0deg);}
+    32%{border-radius: 0%; background-color: var(--blue); transform: scale(.1,.5) skew(0deg, 0deg);}
+    40%{border-radius: 0%; background-color: var(--blue); transform: scale(.1,.5) skew(30deg, -30deg);}
+    44%{border-radius: 0%; background-color: var(--blue); transform: scale(.1,.5) skew(40deg, -40deg);}
+    48%{border-radius: 0%; background-color: var(--blue); transform: scale(.1,.5) skew(0deg, 18deg);}
+    56%{border-radius: 50%; background-color: var(--blue); transform: scale(.5,.5) skew(0deg, 0deg);}
+    64%{border-radius: 50%; background-color: var(--turquoise); transform: scale(.5,.5) skew(0deg, 0deg);}
+    66%{border-radius: 50%; background-color: var(--turquoise); transform: scale(.3,.3) skew(0deg, 0deg);}
+    68%{border-radius: 50%; background-color: var(--turquoise); transform: scale(.5,.5) skew(0deg, 0deg);}
+    70%{border-radius: 50%; background-color: var(--turquoise); transform: scale(.8,.8) skew(0deg, 0deg);}
+    72%{border-radius: 50%; background-color: var(--turquoise); transform: scale(.5,.5) skew(0deg, 0deg); opacity: 1;}
+    76%{border-radius: 50%; background-color: var(--blue); transform: scale(.5,.5) skew(0deg, 0deg);}
+    80%{border-radius: 50%; background-color: var(--blue); transform: scale(.2,.2) skew(0deg, 0deg);}
+    88%{border-radius: 50%; background-color: var(--blue); transform: scale(.4,.4) skew(0deg, 0deg);}
+    92%{border-radius: 50%; background-color: var(--cerise); transform: scale(3,3) skew(0deg, 0deg); opacity: 1;}
+    96%{border-radius:50%;  background-color:var(--cerise); transform:scale(.5,.5) skew(0deg, 0deg);opacity:1}
+    97% {opacity:0;}
+    100%{opacity:0}
+}
