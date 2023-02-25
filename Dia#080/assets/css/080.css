@@ -1,0 +1,60 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.frame{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: #fff;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    border-radius: 10px;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.column{
+    flex: 1;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+
+.column p{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    transform: scale(0);
+    transition: all 0.5s ease;
+}
+
+.column:hover{
+    flex: 4;
+}
+
+.column:hover p{
+    transform: scale(1);
+}
+
+.column:nth-child(odd){
+    background: #34495e;
+}
+
+.column:nth-child(even){
+    background: #e67e22;
+}
