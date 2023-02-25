@@ -312,3 +312,7 @@ Challenge
 # 078
 
 ![078](Dia%23078/assets/img/078.gif)
+
+# 079
+
+![079](Dia%23079/assets/img/079.gif)
