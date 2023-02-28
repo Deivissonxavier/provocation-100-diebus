@@ -324,3 +324,7 @@ Challenge
 # 081
 
 ![081](Dia%23081/assets/img/081.gif)
+
+# 082
+
+![082](Dia%23082/assets/img/082.gif)
