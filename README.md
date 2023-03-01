@@ -335,4 +335,4 @@ Challenge
 
 # 084
 
-![084](Dia%23084/assets/img/084.gif)
+![084](Dia%23084/assets/img/084.png)
