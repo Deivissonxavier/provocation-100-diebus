@@ -1,0 +1,67 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #fff;
+  display: grid;
+  grid-template: 33% 33% 33% / 33% 33% 33%;
+  grid-gap: 1%;
+}
+
+img{
+  width: 100%;
+  transition: 0.5s;
+  cursor: pointer;
+  z-index: 1;
+}
+
+img:hover{
+  transform: scale(1.01);
+
+
+}
+
+img:nth-child(1){
+  transform-origin: top left;
+}
+
+img:nth-child(2){
+  transform-origin: top;
+}
+
+img:nth-child(3){
+  transform-origin: top right;
+}
+
+img:nth-child(4){
+  transform-origin: left;
+}
+
+img:nth-child(5){
+  transform-origin: center;
+}
+
+img:nth-child(6){
+  transform-origin: right;
+}
+
+img:nth-child(7){
+  transform-origin: bottom left;
+}
+
+img:nth-child(8){
+  transform-origin: bottom;
+}
+
+img:nth-child(9){
+  transform-origin: bottom right;
+}

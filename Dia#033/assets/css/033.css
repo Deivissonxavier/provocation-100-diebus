@@ -1,0 +1,56 @@
+.frame{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    background: #75c1c8;
+}
+
+.sun{
+    position: absolute;
+    height: 64px;
+    width: 64px;
+    top: 40px;
+    left: 52px;
+    background: #ffd93c;
+    border-radius: 50%;
+    animation: moveRight 60s linear infinite alternate both;
+}
+.cloud-big, .cloud-medium, .cloud-small{
+    position: absolute;
+    z-index: 5;
+    top: 118px;
+    left: 280px;
+    animation: meveLeft 60s linear infinite alternate both;
+}
+.cloud-medium{
+    top: 89px;
+    left: 50px;
+}
+.cloud-small{
+    top: 74px;
+    left: 195px;
+}
+
+@keyframes meveLeft{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-300%);
+    }
+}
+@keyframes meveRight{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(100%);
+    }
+}

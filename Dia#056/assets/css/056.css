@@ -1,0 +1,197 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.frame{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: radial-gradient(#18b386, #16a078);
+    color: #333;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fleur{
+    position: absolute;
+    animation: fleur linear 5s infinite;
+}
+
+.fleur:hover{
+    opacity: 60%;
+}
+
+.fleur::after{
+    content: "";
+    z-index: 99;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: radial-gradient(#f1c40f, #b7a7e0, #7759c4, #7759c4);
+    animation: bloom ease-in-out 5s infinite alternate;
+    transform: translate(-50%, -50%);
+}
+
+.fleur::before{
+    content: "";
+    z-index: 90;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #7759c4;
+    transform: translate(-25px, -25px);
+}
+
+.petale{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 0px 60px;
+    background: #7b5ec6;
+    transform-origin: 0px 0px;
+}
+.petale::after{
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 0px 50px;
+    background: linear-gradient(90deg, #9983d3, #7b5ec6);
+    transform-origin: 0px 0px;
+}
+
+.petale::before{
+    content: "";
+    z-index: 1;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 0px 40px;
+    background: linear-gradient(90deg, #b7a7e0, #9983d3);
+    transform-origin: 0px 0px;
+}
+
+.p1{
+    transform: rotate(0deg);
+    animation: grow-1 ease-in-out 5s infinite alternate;
+}
+.p2{
+    transform: rotate(72deg);
+    animation: grow-2 ease-in-out 5s infinite alternate;
+}
+.p3{
+    transform: rotate(144deg);
+    animation: grow-3 ease-in-out 5s infinite alternate;
+}
+.p4{
+    transform: rotate(216deg);
+    animation: grow-4 ease-in-out 5s infinite alternate;
+}
+.p5{
+    transform: rotate(288deg);
+    animation: grow-5 ease-in-out 5s infinite alternate;
+}
+
+@keyframes fleur{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes grow-1{
+    0%{
+        transform: scale(0);
+    }
+    10%{
+        transform: scale(0)
+    }
+    60%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes grow-2{
+    0%{
+        transform: scale(0) rotate(72deg);
+    }
+    20%{
+        transform: scale(0) rotate(72deg);
+    }
+    60%{
+        transform: scale(1) rotate(72deg);
+    }
+    100%{
+        transform: scale(1) rotate(72deg);
+    }
+}
+@keyframes grow-3{
+    0%{
+        transform: scale(0) rotate(144deg);
+    }
+    30%{
+        transform: scale(0) rotate(144deg);
+    }
+    60%{
+        transform: scale(1) rotate(144deg);
+    }
+    100%{
+        transform: scale(1) rotate(144deg);
+    }
+}
+@keyframes grow-4{
+    0%{
+        transform: scale(0) rotate(216deg);
+    }
+    40%{
+        transform: scale(0) rotate(216deg);
+    }
+    60%{
+        transform: scale(1) rotate(216deg);
+    }
+    100%{
+        transform: scale(1) rotate(216deg);
+    }
+}
+@keyframes grow-5{
+    0%{
+        transform: scale(0) rotate(288deg);
+    }
+    50%{
+        transform: scale(0) rotate(288deg);
+    }
+    60%{
+        transform: scale(1) rotate(288deg);
+    }
+    100%{
+        transform: scale(1) rotate(288deg);
+    }
+}
+
+@keyframes bloom{
+    0%{
+        opacity: 0%;
+    }
+    40%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}

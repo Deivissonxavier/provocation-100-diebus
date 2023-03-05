@@ -1,0 +1,170 @@
+:root{
+    --bgColor: #684595;
+}
+
+.frame{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: #fff;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -mos-osx-font-smoothing: grayscale;
+    background: var(--bgColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle{
+    fill: none;
+    stroke: #fff;
+    stroke-width: 3;
+    stroke-linecap: round;
+    transform-origin: 50% 50%;
+}
+
+.icon{
+    position: absolute;
+    width: 22px;
+}
+
+.icon-top{
+    height: 45px;
+    background: white;
+    margin: auto;
+    border-radius: 15px;
+}
+
+.icon-top-heart{
+    height: 15px;
+    width: 6px;
+    background: var(--bgColor);
+    margin: auto;
+    border-radius: 6px;
+    transform: translateY(7px);
+}
+
+.icon-middle{
+    height: 9px;
+    width: 3px;
+    background: white;
+    margin: auto;
+}
+
+.icon-down{
+    height: 3px;
+    background: white;
+    margin: auto;
+    border-radius: 3px;
+}
+
+.dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    opacity: 0;
+}
+
+.dot{
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 100%;
+}
+
+.dot-1{
+    animation: dotAnimation 1s ease-in-out infinite;
+}
+
+.dot-2{
+    animation: dotAnimation 1s ease-in-out infinite;
+}
+
+.dot-3{
+    animation: dotAnimation 1s ease-in-out infinite;
+}
+
+.checkbox{
+    position: absolute;
+    opacity: 0;
+    z-index: 100;
+}
+
+.checkbox:checked ~ .icon{
+    animation: iconAnimation 2s ease-in-out both;
+}
+
+.checkbox:checked ~ .dots{
+    animation: dotsAnimation 2s ease-in-out 1s both;
+}
+
+.checkbox:checked ~ svg .circle{
+    animation: circleAnimation 5s linear infinite;
+}
+
+@keyframes dotAnimation{
+    0%{
+        transform: translateY(5px);
+    }
+    50%{
+        transform: translateY(-5px);
+    }
+    100%{
+        transform: translateY(5px);
+    }
+}
+
+@keyframes iconAnimation{
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+@keyframes dotsAnimation{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes circleAnimation{
+    0%{
+        stroke-dashoffset: 0;
+        stroke-dasharray: 296 296;
+        transform: rotate(0deg);
+    }
+    100%{
+        stroke-dashoffset: -592;
+        stroke-dasharray: 296 296;
+        transform: rotate(360deg);
+    }
+}

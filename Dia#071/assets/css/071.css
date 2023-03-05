@@ -1,0 +1,253 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.frame{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: #fff;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.display{
+    background: #023047;
+    width: 400px;
+    height: 160px;
+    position: absolute;
+    padding-top: 240px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.display:before{
+    content: '';
+    width: 400px;
+    height: 5px;
+    background: #ff9800;
+    position: absolute;
+    top: 235px;
+}
+
+.circle{
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px white, -2px -2px 5px white;
+    position: fixed;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, 0%) scale(0);
+}
+
+.keyboard{
+    width: 400px;
+    height: 160px;
+    position: absolute;
+    top: 240px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background: #219EBC;
+}
+
+.key{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #219EBC;
+    transition: all .5s;
+    color: #023047;
+}
+
+.key:hover{
+    background: #ff9800;
+}
+
+.key.no:hover{
+    background: #219EBC;
+}
+
+@keyframes short{
+    0%{
+        transform: translate(-50%, 0%) scale(0);
+    }
+    30%{
+        transform: translate(-50%, 0%) scale(1);
+    }
+    50%{
+        transform: translate(-50%, 0%) scale(0);
+    }
+}
+
+@keyframes long{
+    0%{
+        transform: translate(-50%, 0%) scale(0);
+    }
+    30%{
+        transform: translate(-50%, 0%) scale(1);
+    }
+    90%{
+        transform: translate(-50%, 0%) scale(0);
+    }
+}
+
+button{
+    border: none;
+}
+
+
+.key:nth-child(1):focus ~ div{
+	animation: short 1s step-end, long 1s step-end 1s;
+} 
+
+.key:nth-child(2):focus ~ div{
+	animation: long 1s step-end, short 1s step-end 1s,  short 1s step-end 2s, short 1s step-end 3s;
+} 
+
+.key:nth-child(3):focus ~ div{
+	animation: long 1s step-end, short 1s step-end 1s,  long 1s step-end 2s, short 1s step-end 3s;
+} 
+
+.key:nth-child(4):focus ~ div{
+	animation: long 1s step-end, short 1s step-end 1s,  short 1s step-end 2s;
+}
+
+.key:nth-child(5):focus ~ div{
+	animation: short 1s step-end;
+}
+
+.key:nth-child(6):focus ~ div{
+	animation: short 1s step-end, short 1s step-end 1s, long 1s step-end 2s,  short 1s step-end 3s;
+}
+
+.key:nth-child(7):focus ~ div{
+	animation: long 1s step-end, long 1s step-end 1s,  short 1s step-end 2s;
+}
+
+.key:nth-child(8):focus ~ div{
+	animation: short 1s step-end, short 1s step-end 1s,  short 1s step-end 2s, short 1s step-end 3s;
+} 
+
+.key:nth-child(9):focus ~ div{
+	animation: short 1s step-end, short 1s step-end 1s;
+}
+
+.key:nth-child(10):focus ~ div{
+	animation: short 1s step-end, long 1s step-end 1s,  long 1s step-end 2s, long 1s step-end 3s;
+}
+
+.key:nth-child(11):focus ~ div{
+	animation: long 1s step-end, short 1s step-end 1s,  long 1s step-end 2s;
+}
+
+.key:nth-child(12):focus ~ div{
+	animation: short 1s step-end, long 1s step-end 1s,  short 1s step-end 2s, short 1s step-end 3s;
+}
+
+.key:nth-child(13):focus ~ div{
+	animation: long 1s step-end, long 1s step-end 1s;
+}
+
+.key:nth-child(14):focus ~ div{
+	animation: long 1s step-end, short 1s step-end 1s;
+}
+
+.key:nth-child(15):focus ~ div{
+	animation: long 1s step-end, long 1s step-end 1s,  long 1s step-end 2s;
+}
+
+.key:nth-child(16):focus ~ div{
+	animation: short 1s step-end, long 1s step-end 1s,  long 1s step-end 2s, short 1s step-end 3s;
+}
+
+.key:nth-child(17):focus ~ div{
+	animation: long 1s step-end, long 1s step-end 1s,  short 1s step-end 2s, long 1s step-end 3s;
+}
+
+.key:nth-child(18):focus ~ div{
+	animation: short 1s step-end, long 1s step-end 1s,  short 1s step-end 2s;
+}
+
+.key:nth-child(19):focus ~ div{
+	animation: short 1s step-end, short 1s step-end 1s,  short 1s step-end 2s;
+}
+
+.key:nth-child(20):focus ~ div{
+	animation: long 1s step-end;
+}
+
+.key:nth-child(21):focus ~ div{
+	animation: short 1s step-end, short 1s step-end 1s,  long 1s step-end 2s;
+}
+
+.key:nth-child(22):focus ~ div{
+	animation: short 1s step-end, short 1s step-end 1s,  short 1s step-end 2s, long 1s step-end 3s;
+}
+
+.key:nth-child(23):focus ~ div{
+	animation: short 1s step-end, long 1s step-end 1s,  long 1s step-end 2s;
+}
+
+.key:nth-child(24):focus ~ div{
+	animation: long 1s step-end, short 1s step-end 1s,  short 1s step-end 2s, long 1s step-end 3s;
+}
+
+.key:nth-child(25):focus ~ div{
+	animation: long 1s step-end, short 1s step-end 1s,  long 1s step-end 2s, long 1s step-end 3s;
+}
+
+.key:nth-child(26):focus ~ div{
+	animation: long 1s step-end, long 1s step-end 1s,  short 1s step-end 2s, short 1s step-end 3s;
+}
+
+.key:nth-child(31):focus ~ div{
+	animation: long 1s step-end, long 1s step-end 1s,  long 1s step-end 2s, long 1s step-end 3s, long 1s step-end 4s;
+}
+
+.key:nth-child(32):focus ~ div{
+	animation: short 1s step-end, long 1s step-end 1s,  long 1s step-end 2s, long 1s step-end 3s, long 1s step-end 4s;
+}
+
+.key:nth-child(33):focus ~ div{
+	animation: short 1s step-end, short 1s step-end 1s,  long 1s step-end 2s, long 1s step-end 3s, long 1s step-end 4s;
+}
+
+.key:nth-child(34):focus ~ div{
+	animation: short 1s step-end, short 1s step-end 1s,  short 1s step-end 2s, long 1s step-end 3s, long 1s step-end 4s;
+}
+
+.key:nth-child(35):focus ~ div{
+	animation: short 1s step-end, short 1s step-end 1s,  short 1s step-end 2s, short 1s step-end 3s, long 1s step-end 4s;
+}
+
+.key:nth-child(36):focus ~ div{
+    animation: short 1s step-end, short 1s step-end 1s,  short 1s step-end 2s, short 1s step-end 3s, short 1s step-end 4s;
+}
+
+.key:nth-child(37):focus ~ div{
+	animation: long 1s step-end, short 1s step-end 1s,  short 1s step-end 2s, short 1s step-end 3s, short 1s step-end 4s;
+}
+
+.key:nth-child(38):focus ~ div{
+	animation: long 1s step-end, long 1s step-end 1s,  short 1s step-end 2s, short 1s step-end 3s, short 1s step-end 4s;
+}
+
+.key:nth-child(39):focus ~ div{
+	animation: long 1s step-end, long 1s step-end 1s,  long 1s step-end 2s, short 1s step-end 3s, short 1s step-end 4s;
+}
+
+.key:nth-child(40):focus ~ div{
+	animation: long 1s step-end, long 1s step-end 1s,  long 1s step-end 2s, long 1s step-end 3s, short 1s step-end 4s;
+}

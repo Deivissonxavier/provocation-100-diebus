@@ -1,0 +1,31 @@
+body{
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    background: #1F91DD;
+    border-radius: 2px;
+    box-shadow: 1px 2px 10px rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+  
+span{
+    position: absolute;
+    height: 300px;
+    width: 90px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    animation: rotate 5s ease-in-out infinite;
+}

@@ -1,0 +1,162 @@
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,500,300);
+*{
+	margin:0;
+	box-sizing:border-box;
+	color:#7F6C58;
+}
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	
+  background-image: linear-gradient(45deg, #EEBE6C 10%, #CA7C4E 90%);
+  
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.center{
+	position:relative;
+	top:50px;
+  left: 40px;
+	height:300px;
+	width: 320px;
+	
+}
+.container.principal {
+	//transform:scale(.1);
+  width:100%;
+	height:100%;
+	background:white;
+	display:grid;
+	grid-template: "profile-info posts"
+	 	auto "profile-info likes" auto"profile-info followers" auto /  65% auto;
+	gap:2px;
+	//grid: repeat(2, 60px) / auto-flow 80px;
+
+}
+.profile-info{
+	grid-area:profile-info;
+	
+	display:flex;
+	flex-direction: column;
+	align-items:center;
+	justify-content:flex-start;
+}
+
+.container-img{
+  display:flex;
+   width:85px;
+  height:85px;
+  position:relative;
+	margin: 25px 0;
+}
+.major.circle{
+  position:absolute;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:100%;
+  height:100%;
+  justify-content:center;
+  border-radius:50%;
+  border: 1px solid black;
+  border-color:#7F6C58 white #7F6C58 #7F6C58;
+  transition:1.5s ease-in-out;
+}
+.minor.circle{
+  
+  width:96%;
+  height:96%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  border: 1px solid black;
+  border-color:#7F6C58 #7F6C58 #7F6C58 white;
+  transition:1.5s ease-in-out;
+	
+}
+.image.circle{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  background:lightgreen;
+  width:85%;
+  height:85%;
+  border-radius:50%;
+  transition:1.5s ease-in-out;
+	overflow:hidden;
+}
+
+.major.circle:hover{
+  transform: rotate(360deg);
+  
+}
+.minor.circle:hover{
+  transform: rotate(-720deg);
+  
+}
+
+.profile-info .name{
+	font-size:18px;
+	font-weight:bold;
+}
+.profile-info .ocupation{
+	font-size:12px;
+	margin-bottom:30px;
+	
+}
+.profile-info a{
+	text-decoration:none;
+	font-weight:500;
+	width:130px;
+	text-align:center;
+	line-height:30px;
+	
+	border-radius:30px;
+	border: solid 1px #7F6C58;
+	transition:.3s ease-in-out;
+	margin-bottom:10px;
+}
+.profile-info a:hover{
+	background-color:#7F6C58;
+	color:white;
+	
+}
+.counters{
+	background:#F5E8DF;
+	transition:.3s ease-in-out;	
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+}
+.counters:hover{
+	background:#E1CFC2;
+}
+.counters.posts{
+grid-area:posts;
+}
+.counters.likes{
+	grid-area:likes;
+}
+.counters.followers{
+	grid-area:followers;
+}
+.counters .value{
+	font-size:20px;
+	font-weight:500;
+}
+.counters .description{
+	font-size:13px;
+	font-weight:300;
+}

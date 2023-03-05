@@ -1,0 +1,235 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+/*Variavel*/
+
+:root{
+	--clr-background: #000;
+	--clr-main: #fff;
+	--animation-duration: 5s;
+	--animation-function: linear;
+}
+
+/* Modelo */
+
+.frame{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 400px;
+	height: 400px;
+	margin-top: -200px;
+	margin-left: -200px;
+	border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	background: #fff;
+	color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	transform: translate3d(0, 0, 0);
+	background-color: var(--clr-background);
+	filter: contrast(25);
+}
+
+/*Estilos principais*/
+
+.frame * {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	--base-transform: translate(-50%,-50%);
+	transform: var(--base-transform);
+	border-radius: 50%;
+	background-color: var(--clr-main);
+}
+
+.circle{
+	width: 80px;
+	height: 80px;
+	filter: blur(16px);
+}
+
+.blubb{
+	width: 35px;
+	height: 35px;
+	filter: blur(7px);
+}
+
+.sparkle::before{
+	content: "";
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	background-color: var(--clr-main);
+}
+
+.blubb-1{
+	animation: meatballs calc(var(--animation-duration)*0.7)
+calc(var(--animation-duration)*0.2) var(--animation-function) infinite;
+	transform-origin: 5px 25px;
+}
+
+.blubb-2{
+	animation: meatballs cal(var(--animation-duration)*0.7)
+calc(var(--animation-duration)*0.4) var(--animation-function) infinite;
+	transform-origin: 10px 8px;
+}
+
+.blubb-3{
+	animation: meatballs calc(var(--animation-duration) * 0.7)
+calc(var(--animation-duration) *0.4) var(--animation-function) infinite;
+	transform-origin: 13px 6px;
+}
+
+.blubb-4{
+	animation: meatballs calc(var(--animation-duration) * 0.7)
+calc(var(--animation-duration) *0.4) var(--animation-function) infinite;
+	transform-origin: 22px 17px;
+}
+
+.blubb-5{
+	animation: meatballs calc(var(--animation-duration)*0.7)
+calc(var(--animation-duration) *0.6) var(--animation-function) infinite;
+	transform-origin: 21px 9px;
+}
+
+.blubb-6{
+	animation: meatballs calc(var(--animation-duration)*0.7)
+calc(var(--animation-duration)*0.6) var(--animation-function) infinite;
+	transform-origin: 13px 9px;
+}
+
+.blubb-7{
+	animation: meatballs calc(var(--animation-duration)*0.7)
+calc(var(--animation-duration)*0.8) var(--animation-function) infinite;
+	transform-origin: 20px 8px;
+}
+
+.blubb-8{
+	animation: meatballs calc(var(--animation-duration)*0.7)
+calc(var(--animation-duration)*0.8) var(--animation-function) infinite;
+	transform-origin: 31px 27px;
+}
+
+
+.sparkle-1{
+	width: 6px;
+	height: 6px;
+}
+
+.sparkle-1::before{
+	animation: meatballs var(--animation-duration) calc(var(--animation-duration) *0.14) var(--animation-function) infinite;
+	transform-origin: 36px 51px;
+	filter: blur(2px);		
+}
+
+.sparkle-2{
+	width: 6px;
+	height: 6px;
+}
+
+.sparkle-2::before{
+	animation: meatballs var(--animation-duration) calc(var(--animation-duration)*0.05) var(--animation-function) infinite;
+	transform-origin: -56px -57px;
+	filter: blur(2px);
+}
+
+.sparkle-3{
+	width: 9px;
+	height: 9px;
+}
+
+.sparkle-3::before{
+	animation: meatballs var(--animation-duration) calc(var(--animation-duration) *0.41) var(--animation-function) infinite;
+	transform-origin: 59px -42px;
+	filter: blur(3px);
+}
+
+.sparkle-4{
+	width: 9px;
+	height: 9px;
+}
+
+.sparkle-4::before{
+	animation: meatballs var(--animation-duration) calc(var(--animation-duration) *0.26) var(--animation-function) infinite;
+	transform-origin: -48px 55px;
+	filter: blur(3px);
+}
+
+.sparkle-5{
+	width: 12px;
+	height: 12px;
+}
+
+.sparkle-5::before{
+	animation: meatballs var(--animation-duration) calc(var(--animation-duration)*0.95) var(--animation-function) infinite;
+	transform-origin: 56px 38px;
+	filter: blur(4px);
+}
+
+.sparkle-6{
+	width: 12px;
+	height: 12px;
+}
+
+.sparkle-6::before{
+	animation: meatballs var(--animation-duration) calc(var(--animation-duration)*0.24) var(--animation-function) infinite;
+	transform-origin: 54px -61px;
+	filter: blur(4px);
+}
+
+.sparkle-7{
+	width: 15px;
+	height: 15px;
+}
+
+.sparkle-7::before{
+	animation: meatballs var(--animation-duration) calc(var(--animation-duration)*0.83) var(--animation-function) infinite;
+	transform-origin: -71px 57px;
+	filter: blur(5px);
+}
+
+.sparkle-8{
+	width: 15px;
+	height: 15px;
+}
+
+.sparkle-8::before{
+	animation: meatballs var(--animation-duration) calc(var(--animation-duration)*0.6) var(--animation-function) infinite;
+	transform-origin: -27px -41px;
+	filter: blur(5px);
+}
+
+.sparkle-9{
+	width: 18px;
+	height: 18px;
+}
+
+.sparkle-9::before{
+	animation: meatballs var(--animation-duration) calc(var(--animation-duration)*0.52) linear infinite;
+	transform-origin: -56px -58px;
+	filter: blur(6px);
+}
+
+.sparkle-10{
+	width: 18px;
+	height: 18px;
+}
+
+.sparkle-10::before{
+	animation: meatbalss var(--animation-duration) calc(var(--animation-duration)*0.94) linear infinite;
+	transform-origin: 66px -51px;
+	filter: blur(6px);
+}
+/*Animação*/
+
+@keyframes meatballs{
+	from{
+		transform: var(--base-transform) rotate(0);
+	}
+	to{
+		transform: var(--base-transform) rotate(360deg);
+	}
+}
+

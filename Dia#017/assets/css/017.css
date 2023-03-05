@@ -1,0 +1,57 @@
+
+.frame{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+}
+
+.frame .container{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: rgb(103, 104, 146);
+}
+.frame .center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.frame .center .svg-container{
+    width: 250px;
+    height: 250px;
+    background: #c8e0e0;
+}
+.frame .center .svg-container #svgelem{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.frame .center .svg-container #svgelem polygon{
+    transition: fill 0.3s ease-in-out;
+}
+.frame .center .svg-container #svgelem .light{
+    fill: #fff;
+}
+.frame .center .svg-container #svgelem .medium{
+    fill: #ccc;
+}
+.frame .center .svg-container #svgelem .dark{
+    fill: #aaa;
+}
+.frame .center .svg-container #svgelem:hover .light{
+    fill: #aaa;
+}
+.frame .center .svg-container #svgelem:hover .medium{
+    fill: #fff;
+}
+.frame .center .svg-container #svgelem:hover .dark{
+    fill: #ccc;
+}

@@ -1,0 +1,137 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.frame{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 400px;
+	height: 400px;
+	margin-top: -200px;
+	margin-left: -200px;
+	border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	background: #14213d;
+	color: #333;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	-webkit-font-smoothig: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.center{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.circle{
+	position: absolute;
+	top: -50px;
+	left: -50px;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: #fca311;
+	animation: bounce 5s ease-in-out infinite;
+}
+
+.triangle{
+	position: absolute;
+	fill: #fca311;
+	top: -50px;
+	left: -50px;
+	width: 105px;
+	height: 100px;
+	animation: triangle 5s ease-in-out infinite;
+}
+
+.octagon{
+	position: absolute;
+	fill: #fca311;
+	top: -50px;
+	left: -50px;
+	width: 100px;
+	height: 100px;
+	animation: octagon 5s ease-in-out infinite;
+}
+
+@keyframes octagon{
+	0%, 30%{
+		transform: scale(0) rotate(22.5deg);
+	} 
+	36%{
+		transform: scale(1.2) rotate(22.5deg);
+	}
+	40%{
+		transform: scale(0.9) rotate(22.5deg);
+	}
+	42%, 44%{
+		transform: scale(1) rotate(22.5deg);
+	}
+	48%{
+		transform: scale(1.2) rotate(22.5deg);
+	}
+	54%, 100%{
+		transform: scale(0) rotate(22.5deg);
+	}
+}
+
+
+@keyframes bounce{
+	0%{
+		transform: translate3d(0, -250px, 0) scaleY(1.2);
+	}
+	10%{
+		transform: translate3d(0, 50px, 0) scaleY(0.8);
+	}
+	14%{
+		transform: translate3d(0, -30px, 0) scaleY(1.1);
+	}
+	18%{
+		transform: translate3d(0, 10px, 0) scaleY(0.0);
+	}
+	20%, 22%{
+		transform: translate3d(0, 0, 0) scaleY(1);
+	}
+	26%{
+		transform: translate3d(0, 0, 0) scale(1.2);
+	}
+	32%, 74%{
+		transform: translate3d(0, 0, 0) scale(0);
+	}
+	80%{
+		transform: translate3d(0, 0, 0) scale(1.2);
+	}
+	84%{
+		transform: translate3d(0, 0, 0) scale(0.9);
+	}
+	86%, 88%{
+		transform: translate3d(0, 0, 0) scale(1);
+	}
+	92%{
+		transform: translate3d(0, -30px, 0) scaleY(0.9);
+	}
+	100%{
+		transform: translate3d(0, 300px, 0) scaleY(1.2);
+	}
+}
+
+@keyframes triangle{
+	0%, 52%{
+		transform: translate3d(0, 0, 0) scale(0);
+	}
+	58%{
+		transform: translate3d(0, 0, 0) scale(1.2);
+	}
+	62%{
+		transform: translate3d(0, 0, 0) scale(0.9);
+	}
+	64%, 66%{
+		transform: translate3d(0, 0, 0) scale(1);
+	}
+	70%{
+		transform: translate3d(0, 0, 0) scale(1.2);
+	}
+	76%, 100%{
+		transform: translate3d(0, 0, 0) scale(0);
+	}
+}

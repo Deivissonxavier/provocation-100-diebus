@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,400);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 100%;
+    color: #fff;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-weight: 400;
+}
+.align-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    min-height: 100vh;
+    background-color: #fff;
+}
+.container{
+    font-size: 2.25rem;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 2px;
+    box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+    background: #0aa382;
+    position: relative;
+    overflow: hidden;
+}
+.container > div{
+    height: 2.8rem;
+    overflow: hidden;
+}
+p{
+    margin-right: 0.7rem;
+}
+.tips{
+    transform: translateY(6.2rem);
+    animation: carousel 8s ease-in-out infinite;
+}
+.tips div{
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 3rem;
+}
+@keyframes carousel{
+    0%{
+        transform: translateY(6.2rem);
+    }
+    20%{
+        transform: translateY(6.2rem);
+    }
+    25%{
+        transform: translateY(3rem);
+    }
+    45%{
+        transform: translateY(3rem);
+    }
+    50%{
+        transform: translateY(0);
+    }
+    70%{
+        transform: translateY(0);
+    }
+    75%{
+        transform: translateY(-3rem);
+    }
+    95%{
+        transform: translateY(-3rem);
+    }
+    100%{
+        transform: translateY(-6rem);
+    }
+}

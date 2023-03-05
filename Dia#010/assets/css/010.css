@@ -1,0 +1,109 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+ * {
+	 margin: 0;
+	 padding: 0;
+}
+ .frame {
+	 position: absolute;
+	 top: 50%;
+	 left: 50%;
+	 width: 400px;
+	 height: 400px;
+	 margin-top: -200px;
+	 margin-left: -200px;
+	 border-radius: 2px;
+	 overflow: hidden;
+	 color: #fff;
+	 font-family: 'Outfit', sans-serif;
+}
+ .frame::after {
+	 position: absolute;
+	 content: "";
+	 height: 100%;
+	 width: 130px;
+	 left: 50%;
+	 transform: translateX(-50%);
+	 background: black;
+	 z-index: 0;
+}
+ .dial-plate {
+	 position: absolute;
+	 top: 50%;
+	 left: 50%;
+	 transform: translate(-50%, -50%);
+	 background: black;
+	 height: 240px;
+	 width: 240px;
+	 border-radius: 50%;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 flex-flow: column;
+	 box-shadow: 0 0 0 6px #666b7a;
+	 z-index: 1;
+}
+ .dial-plate > svg {
+	 position: absolute;
+	 height: 240px;
+	 width: 240px;
+}
+ .dial-plate > svg circle {
+	 stroke-linecap: round;
+	 fill: none;
+	 stroke: green;
+	 stroke-dasharray: 10.5;
+	 stroke-width: 1px;
+}
+ .dial-plate > svg:nth-child(2) circle {
+	 stroke: green;
+	 stroke-dasharray: 690.8;
+	 stroke-width: 3px;
+	 animation: aminate-circle 5s linear infinite;
+	 transform: rotate(-90deg);
+	 transform-origin: center center;
+}
+ .dial-plate > p {
+	 display: flex;
+}
+ .dial-plate > p svg {
+	 margin-right: 3px;
+	 animation: heartbeat 1s linear infinite;
+}
+ .dial-plate > p .energy {
+	 margin-left: 10px;
+}
+ .dial-plate .date {
+	 text-transform: uppercase;
+}
+ .dial-plate .time {
+	 font-size: 34px;
+	 font-weight: 700;
+	 line-height: 60px;
+}
+ @keyframes aminate-circle {
+	 0% {
+		 transform: rotate(-90deg) scaleY(1);
+		 stroke-dashoffset: 690.8;
+	}
+	 50% {
+		 transform: rotate(-90deg) scaleY(1);
+		 stroke-dashoffset: 0;
+	}
+	 50.001% {
+		 transform: rotate(-90deg) scaleY(-1);
+		 stroke-dashoffset: 0;
+	}
+	 100% {
+		 transform: rotate(-90deg) scaleY(-1);
+		 stroke-dashoffset: 690.8;
+	}
+}
+ @keyframes heartbeat {
+	 0% {
+		 transform: scale(0.5);
+	}
+	 100% {
+		 transform: scale(1.2);
+	}
+}
+ 

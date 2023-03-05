@@ -1,0 +1,40 @@
+:root{
+    --angle: 0deg;
+}
+
+@keyframes warp{
+    from{
+        transform: translate(-50%, -50%) rotate(var(--angle)) scale(0);
+    }
+    to{
+        transform: translate(-50%, -50%) rotate(var(--angle)) scale(4.75);
+    }
+}
+
+.frame{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: radial-gradient(#e56060, #001522 80%);
+    color: #333;
+}
+
+span{
+    top: 50%;
+    left: 50%;
+    height: .25rem;
+    width: 10rem;
+    background: linear-gradient(to right, #fff .25rem, transparent 2rem), linear-gradient(to left, #fff .25rem, transparent 2rem);
+    display: block;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) rotate(var(--angle)) scale(0);
+    position: absolute;
+    animation: 1.5s ease-in 0s infinite normal warp;
+}

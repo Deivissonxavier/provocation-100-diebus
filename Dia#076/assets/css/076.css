@@ -1,0 +1,37 @@
+*,
+:before,
+:after{
+    box-sizing: border-box;
+}
+
+.frame{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: #00154D;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input{
+    background: #FFF;
+    border-radius: 0;
+    border: 1px solid white;
+    height: 40px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 5px 5px;
+}
