@@ -49,6 +49,8 @@
     transform-origin: 50% 100%;
 }
 
+/*Animações da vela*/
+
 @keyframes wind{
     0%, 22%, 49%, 62%, 81%, 100%{
         border-radius: 2px 14px 8px 8px / 20px 20px 8px 8px;
