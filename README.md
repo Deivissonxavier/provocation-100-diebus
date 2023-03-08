@@ -344,3 +344,19 @@ Challenge
 # 086
 
 ![086](Dia%23086/assets/img/086.gif)
+
+# 087
+
+![087](Dia%23087/assets/img/087.gif)
+
+# 088
+
+![088](Dia%23088/assets/img/088.gif)
+
+# 089
+
+![089](Dia%23089/assets/img/089.gif)
+
+# 090
+
+![090](Dia%23090/assets/img/090.gif)
