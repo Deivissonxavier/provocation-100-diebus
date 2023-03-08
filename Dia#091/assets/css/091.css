@@ -1,0 +1,129 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.frame{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: #34495e;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothin: grayscale;
+}
+
+.cube{
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    left: 35%;
+    top: 35%;
+    transform-origin: 50% 50%;
+    transform: perspective(500px) rotateX(60deg) rotateZ(45deg) translateZ(32px) rotateZ(1turn);
+    transform-style: preserve-3d;
+    transition: transform 3s ease-in-out;
+}
+
+.pane{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-origin: 50% 50%;
+}
+
+.pane.top{
+    transform: rotateX(90deg) translateY(50%);
+    transform-style: preserve-3d;
+    pointer-events: none;
+}
+
+.pane.pane.top::after{
+    transform: translateY(-5%) rotateX(-90deg);
+}
+
+.pane.top::before{
+    transform: rotateX(-90deg);
+}
+
+.pane.bottom{
+    transform: rotateX(90deg) translateY(-50%);
+    transform-style: preserve-3d;
+    pointer-events: none;
+}
+
+.pane.bottom::after{
+    transform: rotateX(-90deg);
+}
+
+.pane.bottom::before{
+    transform: rotateX(-90deg);
+    transition: box-shadow 3s ease-in-out;
+    box-shadow: 16px 32px 64px rgba(0, 0, 0, 0.8);
+}
+
+.pane.front{
+    transform: translateY(50%) rotateX(90deg);
+    overflow: hidden;
+}
+
+.pane.back{
+    transform: translateY(-50%) rotateX(90deg);
+    overflow: hidden;
+}
+
+.pane.left{
+    transform: translateX(-50%) rotateY(90deg) rotateZ(90deg);
+    overflow: hidden;
+}
+.pane.right{
+    transform: translateX(50%) rotateY(90deg) rotateZ(90deg);
+    overflow: hidden;
+}
+
+.pane.front::after, .pane.back::after, .pane.left::after, .pane.right::after{
+    transform: translateY(-5%);
+}
+
+.pane::after{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-origin: 50% 50%;
+    transition: transform 3s ease-in-out;
+    pointer-events: none;
+    background: rgba(46, 204, 113, 0.8);
+    content: "";
+    z-index: 0;
+}
+
+.pane::before{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.1);
+    content: "";
+    z-index: 1;
+    box-shadow: 0 0 64px rgba(0, 0, 0, 0.2) inset;
+}
+
+.cube:not(:hover){
+    transform: perspective(500px) rotateX(60deg) rotateZ(45deg);
+}
+
+.cube:not(:hover) > .pane.top::after{
+    transform: translateY(-95%) rotateX(-90deg);
+}
+
+.cube:not(:hover) > .pane.front::after, .cube:not(:hover) > .pane.back::after, .cube:not(:hover) > .pane.left::after, .cube:not(:hover) > .pane.right::after{
+    transform: translateY(-95%);
+}
+
+.cube:not(:hover) > .pane.bottom::before{
+    box-shadow: 8px 16px 32px 0 rgba(0, 0, 0, 0.25);
+}
