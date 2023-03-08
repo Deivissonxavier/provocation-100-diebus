@@ -1,0 +1,56 @@
+#frame{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.23);
+    overflow: hidden;
+    background: #2980b9;
+    color: #fff;
+}
+
+#space{
+    height: 10px;
+}
+
+.trigger{
+    position: relative;
+    z-index: 10;
+    box-sizing: border-box;
+    float: left;
+    width: 20px;
+    height: 20px;
+}
+
+#lines{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.line{
+    margin: 19px 0px;
+    height: 1px;
+    width: 400px;
+}
+.left,
+.right{
+    content: "";
+    float: left;
+    height: 1px;
+    width: 200px;
+    background: #fff;
+    transform-origin: 0 50%;
+    transition: all 0.3s linear;
+    transform: scaleX(0);
+}
+
+.right{
+    transform-origin: 100% 50%;
+}
