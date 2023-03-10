@@ -1,0 +1,140 @@
+.frame{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 400px;
+    width: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: #fff;
+    color: #333;
+    font-family: "open sans", Helvetica, sans-serif;
+    -moz-osx-font-smothing: antialiased;
+    -moz-osx-font-soothing: grayscale;
+    background: red;
+    background: linear-gradient(135deg, rgb(255, 0, 0) 50%, rgb(0, 0, 0, 1)50%);
+}
+
+.center{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-cntent{
+    padding-top: 50px;
+}
+
+.handle{
+    position: absolute;
+    top: 70px;
+    left: 130px;
+    height: 100px;
+    width: 120px;
+    border-radius: 50% 50% 0 0;
+    border: 10px solid white;
+    box-shadow: inset 5px 3px 8px 0px rgba(0, 0, 0, 0.4);
+}
+
+
+.circle{
+    width: 150px;
+    height: 150px;
+    background: gray;
+    border-radius: 50%;
+    border: 7px solid white;
+    z-index: 3;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: aqua;
+    box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.4);
+}
+
+.circle-center{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    justify-self: center;
+    box-shadow: 1px 1px 1px 1px rgba(221, 206, 214, 0.8);
+    position: absolute;
+}
+
+.circle .numbers-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 900ms;
+}
+
+.circle .numbers-container:hover{
+    transform: rotate(360deg);
+}
+
+.circle .numbers-container .number{
+    font:  16px Monaco, MonoSpace;
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    left: 43%;
+    top: 0;
+}
+
+.circle .numbers-container .number::before{
+    display: block;
+    content: "|";
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    height: 18px;
+}
+
+.circle .numbers-container .number-1, .circle .numbers-container .number-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle .numbers-container .number-1{
+    transform: rotate(2deg);
+}
+
+.circle .numbers-container .number-2{
+    transform: rotate(46deg);
+}
+
+.circle .numbers-container .number-3{
+    transform: rotate(80deg);
+}
+
+.circle .numbers-container .number-4{
+    transform: rotate(126deg);
+}
+
+.circle .numbers-container .number-5{
+    transform: rotate(176deg);
+}
+
+.circle .numbers-container .number-6{
+    transform: rotate(226deg);
+}
+
+.circle .numbers-container .number-7{
+    transform: rotate(266deg);
+}
+
+.circle .numbers-container .number-8{
+    transform: rotate(316deg);
+}
