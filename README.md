@@ -364,3 +364,11 @@ Challenge
 # 091
 
 ![091](Dia%23091/assets/img/091.gif)
+
+# 092
+
+![092](Dia%23092/assets/img/092.gif)
+
+# 093
+
+![093](Dia%23093/assets/img/093.gif)
