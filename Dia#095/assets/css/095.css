@@ -1,0 +1,144 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.frame{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: #3fb5a2;
+    color: #333;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    -wekit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pig{
+    position: relative;
+    animation: rotate 3s infinite;
+}
+
+.ear{
+    width: 60px;
+    height: 60px;
+    border: 8px solid #f7949a;
+    border-radius: 20px;
+    background: #ffb7bc;
+    position: absolute;
+}
+
+.ear.left{
+    transform: rotate(10deg) skew(20deg);
+}
+
+.ear.right{
+    right: 0;
+    transform: rotate(100deg) skew(20deg);
+}
+
+.head{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background: #f7949a;
+    position: relative;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nose{
+    background: #ffb7bc;
+    height: 50px;
+    width: 60px;
+    clip-path: ellipse(49% 46% at 50% 50%);
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    animation: smell 3s infinite;
+}
+
+.hole{
+    background: #ce666d;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin-top: 15px;
+}
+
+.eye{
+    background: #fff;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    animation: wink 3s infinite;
+}
+
+
+.eye::after{
+    content: "";
+    background: #000;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: look 3s infinite;
+}
+
+@keyframes wink{
+    45%, 75%{
+        transform: scaleY(1);
+    }
+    50%, 70%{
+        transform: scaleY(0);
+    }
+}
+
+@keyframes smell{
+    10%, 20%{
+        bottom: 30px;
+    }
+    15%, 30%{
+        bottom: 25px;
+    }
+}
+
+@keyframes look{
+    30%, 40%{
+        left: 50%;
+    }
+    35%{
+        left: 10%;
+    }
+}
+
+@keyframes rotate{
+    50%, 60%{
+        transform: rotate(0deg);
+    }
+    55%, 65%{
+        transform: rotate(-5deg);
+    }
+}
