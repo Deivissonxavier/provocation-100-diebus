@@ -1,0 +1,143 @@
+:root{
+    --omino: white;
+}
+
+.frame{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 0px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: #8e44ad;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.head{
+    background: var(--omino);
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    position: absolute;
+    top: 90px;
+    left: 183px;
+}
+
+.body{
+    background: var(--omino);
+    width: 50px;
+    height: 100px;
+    position: absolute;
+    top: 140px;
+    left: 178px;
+}
+
+.leg{
+    background: var(--omino);
+    width: 24px;
+    height: 80px;
+}
+
+.l_l{
+    position: absolute;
+    top: 240px;
+    left: 178px;
+}
+
+.l_r{
+    position: absolute;
+    top: 240px;
+    left: 204px;
+}
+
+.foot{
+    background: var(--omino);
+    width: 24px;
+    height: 24px;
+    border-radius:  0 0 100% 100%;
+}
+
+.f_l{
+    position: absolute;
+    top: 310px;
+    left: 178px;
+}
+
+.f_r{
+    position: absolute;
+    top: 310px;
+    left: 204px;
+}
+
+.braccio_l{
+    background: var(--omino);
+    width: 16px;
+    height: 48px;
+    position: absolute;
+    top: 139.5px;
+    left: 165px;
+    border-radius: 8px;
+    transform: rotate(12deg);
+}
+
+.braccio_r{
+    background: var(--omino);
+    width: 50px;
+    height: 16px;
+    position: absolute;
+    top: 139.5px;
+    left: 220px;
+    animation:  up 1s infinite ease-in-out alternate;
+    transform-origin: left;
+    border-radius: 8px;
+}
+
+.avambr_l{
+    background: var(--omino);
+    width: 16px;
+    height: 48px;
+    position: relative;
+    top: 36px;
+    left: -3px;
+    border-radius: 8px;
+    transform: rotate(8deg);
+}
+
+.avambr_r{
+    background: var(--omino);
+    width: 16px;
+    height: 48px;
+    position: relative;
+    top: -35px;
+    left: 40px;
+    border-radius: 8px;
+    animation: left 2s ease-in-out infinite alternate;
+    transform-origin: left;
+    border-radius: 8px;
+}
+
+@keyframes up{
+    0%{
+        transform: rotate(20deg);
+    }
+    100%{
+
+    }
+}
+
+@keyframes left{
+    0%{
+        transform: rotate(30deg);
+    }
+    100%{
+        
+    }
+}
+
