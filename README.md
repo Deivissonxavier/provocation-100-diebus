@@ -380,3 +380,7 @@ Challenge
 # 095
 
 ![095](Dia%23095/assets/img/095.gif)
+
+# 096
+
+![096](Dia%23096/assets/img/096.gif)
