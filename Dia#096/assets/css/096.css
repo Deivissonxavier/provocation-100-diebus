@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300&display=swap');
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.frame{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40rem;
+    width: 40rem;
+    background: #006363;
+    overflow: hidden;
+}
+
+.frame::after{
+    content: "";
+    position: absolute;
+    height: 30rem;
+    width: 30rem;
+    text-align: center;
+    border-style: solid;
+    border-width: 4rem;
+    padding: 1.2rem  1.5rem 0 1.5rem;
+    color: #fff;
+    word-spacing: 0.2rem;
+    background: repeating-radial-gradient(circle at 50% 100%, #cacaca, #9b9a9a 5rem);
+    border-width: 6rem;
+    border-color: #555 #01a0a0 #555 #01a0a0;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+    z-index: 9;
+}
+
+.down{
+    position: relative;
+    z-index: 10;
+    animation: down 1.6s ease-in infinite both;
+}
+
+.up{
+    animation: up 1.6s ease-in-out infinite both;
+}
+
+.squeeze{
+    transform-origin: 50% 100%;
+    animation: squeeze 1.6s cubic-bezier(0.72, 0.03, 0.28, 0.97) infinite both;
+}
+
+.rotate-in{
+    animation: rotate-in 1.6s ease-out infinite both;
+}
+
+.rotate-out{
+    animation: rotate-out 1.6s ease-out infinite both;
+}
+
+.square{
+    position: relative;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 0.5rem;
+    background: #01a0a0;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+.shadow{
+    position: absolute;
+    z-index: -1;
+    bottom: -4.5rem;
+    left: -0.4rem;
+    right: -0.4rem;
+    height: 0.3rem;
+    border-radius: 50%;
+    background: rgba(143, 143, 143, 0.3);
+    box-shadow: 0 0 0px 0.8rem rgba(143, 143, 143, 0.3);
+    animation: shadow 1.6s ease-in-out infinite both;
+}
+
+@keyframes down {
+	 0% {
+		 transform: translateY(-9rem);
+	}
+	 20%, 100% {
+		 transform: translateY(4.5rem);
+	}
+}
+
+@keyframes up{
+    0%, 75%{
+        transform: translateY(4.5rem);
+    }
+    100%{
+        transform: translateY(-9rem);
+    }
+}
+
+@keyframes squeeze{
+    0%, 4%{
+        transform: scale(1);
+    }
+    45%{
+        transform: scale(1.8, 0.4);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes .rotate-in{
+    
+}
