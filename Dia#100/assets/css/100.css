@@ -1,0 +1,126 @@
+body{
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    border-radius: 2px;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0F2027;
+}
+
+span{
+    position: absolute;
+    border-radius: 5px;
+}
+
+span:nth-child(1){
+    height: 125px;
+    width: 5px;
+    background: #111;
+    left: 60px;
+    top: 138px;
+    animation: glow1 6s ease-in-out infinite alternate both;
+}
+
+span:nth-child(2){
+    width: 60px;
+    height: 5px;
+    background: #111;
+    left: 67px;
+    top: 140px;
+    animation: glow1 6s ease-in-out infinite alternate both;
+}
+
+span:nth-child(3){
+    width: 50px;
+    height: 5px;
+    background: #111;
+    left: 67px;
+    top: 200px;
+    animation: glow1 6s 0.1s ease-in-out infinite alternate both;
+}
+
+span:nth-child(4){
+    width: 60px;
+    height: 5px;
+    background: #111;
+    left: 67px;
+    top: 258px;
+    animation: glow1 6s 0.05s ease-in-out infinite alternate both;
+}
+
+span:nth-child(5){
+    height: 125px;
+    width: 5px;
+    background: #111;
+    left: 160px;
+    animation: glow1 6s 1.5s ease-in-out infinite alternate both;
+}
+
+span:nth-child(6){
+    height: 140px;
+    width: 5px;
+    background: #111;
+    left: 200px;
+    transform: rotate(-30deg);
+    animation: glow1 6s 2s ease-in-out infinite alternate both;
+}
+
+span:nth-child(7){
+    height: 125px;
+    width: 5px;
+    background: #111;
+    left: 240px;
+    animation: glow1 6s 1.2s ease-in-out infinite alternate both;
+}
+
+span:nth-child(8){
+    height: 118px;
+    width: 59px;
+    border-radius: 0px 150px 150px 0px;
+    left: 280px;
+    border-top: 5px solid #111;
+    border-right: 5px solid #111;
+    border-bottom: 5px solid #111;
+    animation: glow2 6s 2.5s ease-in-out infinite alternate both;
+}
+
+span:nth-child(9){
+    height: 125px;
+    width: 5px;
+    left: 280px;
+    animation: glow1 6s 2.4s ease-in-out infinite alternate both;
+}
+
+@keyframes glow1{
+    35%, 37%, 37%, 41%, 100%{
+        background: #F1F4F5;
+        box-shadow: 0px 0px 10px 0px #F1F4F5;
+    }
+    0%, 34%, 36%, 36%, 38%, 40%{
+        background: #111;
+        box-shadow: 0px 0px 6px 0px #1A1E24;
+    }
+}
+
+@keyframes glow2{
+    35%, 37%, 39%, 41%, 100%{
+        border-color: #F1F4F5 #F1F4F5 #F1F4F5 transparent;
+        box-shadow: 0px 0px 10px 0px #F1F4F5, inset 0px 0px 0px 0px #F1F4F5;
+    }
+    0%, 34%, 36%, 36%, 38%, 40%{
+        border-color: #111 #111 #111 transparent;
+        box-shadow: 0px 0px 6px 0px #111, inset 0px 0px 6px 0px #111;
+    }
+}
